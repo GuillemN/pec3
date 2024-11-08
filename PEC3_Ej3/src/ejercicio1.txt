@@ -1,0 +1,74 @@
+
+
+function printArray(array:Array<number>):void{
+	//code to print the array on console
+       /***/
+}
+
+let array:number[]=[2,3,4];
+console.log(/***/); //2
+printArray(array); // 3,4
+/***/
+printArray(array); // 3,4,5
+console.log(/***/); //5
+printArray(array); // 3,4
+/***/
+printArray(array); // 3,4,1
+/***/
+printArray(array); // 8,3,4,1
+/** check if every number is greater than 3 */
+let everyisgreater = /***/;
+console.log(everyisgreater);  //false
+/** check if every number is less than 10 */
+let everyisless = /***/;
+console.log(everyisless);  //true
+console.log(array.sort()); //1,3,4,8
+console.log(/***/); //8,4,3,1
+
+
+
+function printArray(array: Array<number>): void {
+  // Codi per imprimir l'array a la consola
+  console.log(array.join(","));
+}
+
+let array: number[] = [2, 3, 4];
+
+// Mostra el primer element de l'array
+console.log(array[0]); // 2
+
+// Imprimeix els elements de l'array
+printArray(array); // 3,4
+
+// Afegeix un element al final de l'array
+array.push(5);
+printArray(array); // 3,4,5
+
+// Mostra l'últim element de l'array
+console.log(array[array.length - 1]); // 5
+
+// Elimina l'últim element de l'array
+array.pop();
+printArray(array); // 3,4
+
+// Afegeix un element al principi de l'array
+array.unshift(1);
+printArray(array); // 3,4,1
+
+// Afegeix un element al principi de l'array
+array.unshift(8);
+printArray(array); // 8,3,4,1
+
+// Comprova si tots els elements són més grans que 3
+let everyisgreater = array.every(num => num > 3);
+console.log(everyisgreater);  // false
+
+// Comprova si tots els elements són més petits que 10
+let everyisless = array.every(num => num < 10);
+console.log(everyisless);  // true
+
+// Ordena l'array en ordre ascendent
+console.log(array.sort((a, b) => a - b)); // 1,3,4,8
+
+// Ordena l'array en ordre descendent
+console.log(array.sort((a, b) => b - a)); // 8,4,3,1

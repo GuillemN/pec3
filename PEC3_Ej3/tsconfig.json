@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+
+    "target": "es2015", 
+    // Defineix la versió d'ECMAScript a la qual TypeScript compilarà el codi, ES2015 és compatible amb moltes versions modernes de navegadors i entorns.
+
+    "module": "commonjs", 
+    // Defineix el sistema de mòduls a utilitzar. "commonjs" és el sistema de mòduls utilitzat per Node.js.
+
+    "outDir": "./dist",   
+    // Especifica la carpeta de sortida on es guardaran els fitxers JavaScript generats.
+
+    "rootDir": "./src", 
+    // Defineix la carpeta d'origen on es troben els fitxers TypeScript per compilar.
+
+    "strict": true,
+    // Activa totes les opcions de comprovació estricta de TypeScript.
+
+    "incremental": true,
+    // Habilita la compilació incremental, que permet a TypeScript desar informació de compilació per a ús futur, fent que recompilar sigui més ràpid en projectes grans.
+
+    "tsBuildInfoFile": "./buildcache"
+    // Especifica el camí on es desarà la informació de compilació incremental.
+  }
+}
